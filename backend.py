@@ -62,7 +62,3 @@ def describe_image(image_path):
 
     return chat_response.choices[0].message.content
 
-
-image_path = "./IMG_0849.JPG" 
-
-print(describe_image(image_path))
