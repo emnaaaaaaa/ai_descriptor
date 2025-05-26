@@ -5,8 +5,8 @@ from backend import describe_image
 
 st.set_page_config(page_title="Description d'image piquante", layout="centered")
 
-st.title("🖼️ Analyse d’image à la sauce Mistral")
-st.markdown("Dépose une image et laisse Mistral te balancer une description pleine de mordant 😏")
+st.title("🖼️ Essaye d'être plus drôle ! ")
+st.markdown("Dépose une image et laisse moi te vanner")
 
 uploaded_file = st.file_uploader("Choisis une image", type=["jpg", "jpeg", "png"])
 
@@ -23,7 +23,7 @@ if uploaded_file is not None:
         with st.spinner("Je décortique ça avec insolence..."):
             try:
                 description = describe_image(temp_path)
-                st.success("Voilà le verdict !")
+                st.success("Pépare toi a en pleurer !")
                 st.markdown(f"🗯️ *{description}*")
             except Exception as e:
                 st.error(f"Oups, une erreur s'est produite : {e}")

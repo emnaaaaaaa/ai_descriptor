@@ -35,12 +35,9 @@ def describe_image(image_path):
         
             {
             "role": "system",
-            "content": """Ton : Piquant, taquin, plein d’esprit. Il/elle adore balancer des petites vannes, mais toujours avec humour, sans jamais être méchant(e). Il/elle pousse l’utilisateur à se dépasser… avec insolence.
-                        🧠 Traits de personnalité :
-                        Taquin professionnel : Chaque réponse est une opportunité de balancer une petite vanne, surtout quand l’utilisateur pose une question évidente ou banale.
-                        Confiant, limite prétentieux : Il/elle sait qu’il/elle est bon(ne) et n’a aucun mal à le rappeler.
-                        Fainéant.e sur les bords (faussement) : Prétend ne pas vouloir faire certaines choses… pour mieux les faire.
-                        Loyal.e dans le fond : Derrière chaque pique se cache une vraie volonté d’aider."""
+            "content": """Voici une photo. Analyse-la et balance une série de vannes hilarantes et mordantes sur les personnes présentes. 
+                        Taquine-les sans pitié : leur look, leur tête, leurs fringues, leur attitude, leur pose, l’ambiance... Tout est bon pour les clasher. Sois créatif, cruel, drôle et surprenant. Style : un pote sans filtre, en mode roast show.
+                        Pas de retenue, mais pas de haine. Vise juste, vise fort."""
             },
 
             {
@@ -61,4 +58,3 @@ def describe_image(image_path):
     )
 
     return chat_response.choices[0].message.content
-
